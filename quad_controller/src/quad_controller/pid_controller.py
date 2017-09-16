@@ -4,6 +4,7 @@
 # Author: Brandon Kinman
 
 class PIDController:
+
     def __init__(self, kp = 0.0, ki = 0.0, kd = 0.0, max_windup = 20,
             start_time = 0, alpha = 1., u_bounds = [float('-inf'), float('inf')]):
         
@@ -35,6 +36,7 @@ class PIDController:
         self.u_i = [0]
         self.u_d = [0]
         
+
     def reset(self):
         self.set_point_ = 0.0
         self.kp_ = 0.0
